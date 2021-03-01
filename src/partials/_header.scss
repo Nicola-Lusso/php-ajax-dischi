@@ -1,0 +1,9 @@
+header{
+  height: $height_header;
+  width: $maxwidth;
+  background-color: $black;
+  .logo img{
+    float: $left;
+    width: 97px;
+  }
+}

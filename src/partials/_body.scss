@@ -1,0 +1,33 @@
+.album-box{
+  @include wrap;
+
+
+  .album{
+
+    width: 200px;
+    margin: 40px 15px;
+
+    .album-img{
+      width: 100%;
+       img{
+        width: 100%;
+      }
+    }
+    h3{
+      padding: 15px 0;
+      text-align: center;
+      color: white;
+    }
+    p{
+      padding-top: 5px;
+      text-align: center;
+      font-weight: bold;
+      color: grey;
+      cursor: pointer;
+     &:hover{
+      color: rgb(210, 210, 210);
+      text-decoration: underline;
+    }
+    }
+  }
+}

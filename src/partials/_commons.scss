@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background: rgb(12, 25, 43);
+  height: 100vh;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration:none;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}

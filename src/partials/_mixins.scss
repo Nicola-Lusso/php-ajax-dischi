@@ -1,0 +1,72 @@
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin float {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+@mixin container {
+  width: $contwidth;
+  margin: auto;
+}
+
+@mixin column {
+  display: inline-grid;
+  // flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin flex_2($justify:flex-start, $align:center){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin flex_3 {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+@mixin box {
+  width: 30%;
+  height: 350px;
+  background-color: $white;
+  color: $black
+}
+
+@mixin style_font {
+  font-size: 33px;
+  font-weight: 300;
+  color: $black;
+}
+
+@mixin container_box {
+  width: 90%;
+  margin: auto;
+}
+
+@mixin h2_tab{
+  color: $white;
+  font-size: 32px;
+  font-weight: 500;
+  padding-top: $p_20;
+}
+
+@mixin p_tab {
+  color: $white;
+  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: $p_20;
+}
+
+@mixin wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
