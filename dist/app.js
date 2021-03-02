@@ -16,8 +16,8 @@ var app = new Vue({
     var _this = this;
 
     axios.get('server.php').then(function (response) {
-      _this.album = response.data;
-      console.log(_this.album);
+      _this.albums = response.data;
+      console.log(_this.albums);
     });
   }
 });

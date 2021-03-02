@@ -7,8 +7,8 @@ let app = new Vue({
     axios
       .get('server.php')
       .then( response => {
-        this.album = response.data;
-        console.log(this.album);
+        this.albums = response.data;
+        console.log(this.albums);
       });
   }
 });
