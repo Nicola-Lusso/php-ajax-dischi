@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/app.css">
+    <title>Vue Dischi</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="https://1000logos.net/wp-content/uploads/2017/08/Spotify-Logo.png" alt="">
+        </div>
+      </div>
+    </header>
+
+    <main id="app">
+      <div class="container">
+        <div class="album-box">
+
+          <div class="album" v-for="album in albums">
+            <div class="album-img">
+              <img :src="album.poster">
+            </div>
+              <h3>{{album.title}}</h3>
+              <p>{{album.author}}</p>
+              <p>{{album.genre}}</p>
+              <p>{{album.year}}</p>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <script src="dist/app.js" charset="utf-8"></script>
+  </body>
+</html>
