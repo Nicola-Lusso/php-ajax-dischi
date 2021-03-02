@@ -10,14 +10,14 @@
 var app = new Vue({
   el: '#app',
   data: {
-    album: []
+    albums: []
   },
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('db.php').then(function (response) {
-      _this.$albums = response.data;
-      console.log(_this.albums);
+    axios.get('server.php').then(function (response) {
+      _this.album = response.data;
+      console.log(_this.album);
     });
   }
 });
